@@ -24,8 +24,13 @@ group :development, :test do
   gem 'rubocop-rails', require: false
 end
 
-group :development do
+group :test do
+  gem 'capybara'
   gem 'shoulda-matchers', '~> 5.0'
   gem 'simplecov', require: false
+  gem 'webdrivers', '~> 4.0', require: false
+end
+
+group :development do
   gem 'web-console'
 end
