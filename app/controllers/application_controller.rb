@@ -1,6 +1,13 @@
 class ApplicationController < ActionController::Base
   include Clearance::Controller
+  include Clearance::Authentication
+
   around_action :switch_locale
+
+  def authenticate(params)
+    User.authenticate(params[:session][:username],
+                      params[:session][:password])
+  end
 
   def switch_locale(&)
     I18n.with_locale(locale_from_header, &)

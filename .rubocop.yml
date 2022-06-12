@@ -28,3 +28,7 @@ Style/Documentation:
 
 Style/ClassAndModuleChildren:
   EnforcedStyle: 'compact'
+
+Rails/DynamicFindBy:
+  Whitelist:
+    - find_by_username
