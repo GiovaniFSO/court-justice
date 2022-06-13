@@ -31,6 +31,10 @@ pt-BR:
       empty_judge: Nenhum juíz cadastrado
     new:
       title: Novo Juíz
+    update:
+      updated: Juíz atualizado com sucesso
+    edit:
+      title: Atualizar Juíz
   users:
     create:
       created: Juíz cadastrado com sucesso

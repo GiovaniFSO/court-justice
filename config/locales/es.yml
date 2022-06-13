@@ -32,6 +32,10 @@ es:
       empty_judge: Ningún juez registrado
     new:
       title: Nuevo Juez
+    update:
+      updated: Juez actualizado con éxito
+    edit:
+      title: Actualizar Juez
   users:
     create:
       created: Juez registrado con éxito

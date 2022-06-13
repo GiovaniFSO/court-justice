@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   get "/sign_in" => "clearance/sessions#new", as: "sign_in"
   delete "/sign_out" => "clearance/sessions#destroy", as: "sign_out"
   get "/sign_up" => "clearance/users#new", as: "sign_up"
-  resources :judges, only: %i[index new]
+  resources :judges, only: %i[index new edit update]
 
   constraints Clearance::Constraints::SignedIn.new {|user| user.admin? } do
     root "judges#index", as: 'admin_root'

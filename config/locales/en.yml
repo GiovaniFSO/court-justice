@@ -32,6 +32,10 @@ en:
       empty_judge: No judge registered
     new:
       title: New Judge
+    update:
+      updated: Judge successfully updated
+    edit:
+      title: Update Judge
   users:
     create:
       created: Judge created successfully
