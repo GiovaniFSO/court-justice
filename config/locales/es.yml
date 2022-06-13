@@ -1,0 +1,37 @@
+---
+es:
+  activerecord:
+    models:
+      user: Juez
+    attributes:
+      user:
+        name: Nombre
+        username: Nombre de usuario
+        email: Email
+        role: Permiso
+        password: Clave
+    errors:
+      models:
+        user:
+          attributes:
+            password:
+              blank: no puede estar en blanco
+            username:
+              blank: no puede estar en blanco
+            name:
+              blank: no puede estar en blanco
+            role:
+              blank: no puede estar en blanco
+            email:
+              blank: no puede estar en blanco
+  shared:
+    header:
+      judges: Jueces
+  judges:
+    index:
+      empty_judge: Ningún juez registrado
+    new:
+      title: Nuevo Juez
+  users:
+    create:
+      created: Juez registrado con éxito

@@ -1,0 +1,36 @@
+pt-BR:
+  activerecord:
+    models:
+      user: Juíz
+    attributes:
+      user:
+        name: Nome
+        username: Nome de usuario
+        email: Email
+        role: Permissão
+        password: Senha
+    errors:
+      models:
+        user:
+          attributes:
+            password:
+              blank: não pode ficar em branco
+            username:
+              blank: não pode ficar em branco
+            name:
+              blank: não pode ficar em branco
+            role:
+              blank: não pode ficar em branco
+            email:
+              blank: não pode ficar em branco
+  shared:
+    header:
+      judges: Juízes
+  judges:
+    index:
+      empty_judge: Nenhum juíz cadastrado
+    new:
+      title: Novo Juíz
+  users:
+    create:
+      created: Juíz cadastrado com sucesso
