@@ -2,7 +2,7 @@ require 'rails_helper'
 require 'webdrivers'
 describe 'Judge management' do
   before do
-    #driven_by :selenium, using: :chrome
+    # driven_by :selenium, using: :chrome #to run selenium locally not headless
     # If using Firefox
     # driven_by :selenium, using: :firefox
     #
