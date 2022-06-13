@@ -50,7 +50,10 @@ jobs:
           cmd: install # will run `yarn install` command
       - uses: borales/actions-yarn@v3.0.0
         with:
-          cmd: build:css # will run `yarn build` commands
+          cmd: |
+            build # will run `yarn build` commands
+            build:css 
+
       - name: Bundle install
         run: |
           gem install bundler
