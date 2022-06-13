@@ -50,9 +50,10 @@ jobs:
           cmd: install # will run `yarn install` command
       - uses: borales/actions-yarn@v3.0.0
         with:
-          cmd: |
-            yarn build # will run `yarn build` commands
-            yarn build:css 
+          cmd: build # will run `yarn build` commands
+      - uses: borales/actions-yarn@v3.0.0
+        with:
+          cmd: build:css
 
       - name: Bundle install
         run: |
