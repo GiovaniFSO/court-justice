@@ -51,8 +51,8 @@ jobs:
       - uses: borales/actions-yarn@v3.0.0
         with:
           cmd: |
-            build # will run `yarn build` commands
-            build:css 
+            yarn build # will run `yarn build` commands
+            yarn build:css 
 
       - name: Bundle install
         run: |
