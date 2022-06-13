@@ -2,13 +2,14 @@ require 'rails_helper'
 require 'webdrivers'
 describe 'Judge management' do
   before do
-    driven_by :selenium, using: :chrome
+    #driven_by :selenium, using: :chrome
     # If using Firefox
     # driven_by :selenium, using: :firefox
     #
     # If running on a virtual machine or similar that does not have a UI, use
     # a headless driver
-    # driven_by :selenium, using: :headless_chrome
+    # test to github-action
+    driven_by :selenium, using: :headless_chrome
     # driven_by :selenium, using: :headless_firefox
   end
 
