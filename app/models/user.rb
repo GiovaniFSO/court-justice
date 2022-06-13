@@ -1,7 +1,8 @@
 class User < ApplicationRecord
   include Clearance::User
 
-  validates :username, presence: true, uniqueness: true
+  validates :username, :email, presence: true, uniqueness: true
+  validates :name, :role, presence: true
 
   enum role: { admin: 0, user: 1, lawyer: 2, judge: 3 }
 

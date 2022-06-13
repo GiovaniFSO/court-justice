@@ -1,0 +1,17 @@
+<%= link_to t('.new'), new_judge_path %>
+<% if @judges.blank? %>
+  <p><%= t('.empty_judge') %></p>
+<% else %>
+  <table class="table">
+    <thead>
+    <tr>
+      <th>Username</th>
+      <th>Name</th>
+      <th>email</th>
+    </tr>
+    </thead>
+    <tbody>
+    <%= render partial: 'judge', collection: @judges %>
+    </tbody>
+  </table>
+<% end %>

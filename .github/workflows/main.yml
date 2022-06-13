@@ -43,7 +43,17 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
 
       #- name: Yarn Install
-      #  run: bin/yarn
+      #  run: yarn build:css
+      - uses: actions/checkout@v2
+      - uses: borales/actions-yarn@v3.0.0
+        with:
+          cmd: install # will run `yarn install` command
+      - uses: borales/actions-yarn@v3.0.0
+        with:
+          cmd: build # will run `yarn build` commands
+      - uses: borales/actions-yarn@v3.0.0
+        with:
+          cmd: build:css
 
       - name: Bundle install
         run: |
